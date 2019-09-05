@@ -1,0 +1,170 @@
+@media (max-width: 1150px)
+    .projects
+        .projects_grid
+            grid-template-columns: 1fr 1fr
+    .hero
+        .hero_inner
+            .navbar 
+                &-logo
+                    padding-right: 10px
+                &-toolbar
+                    padding-left: 0
+    .posts
+        .posts_content
+            flex-wrap: wrap
+            margin: 0 auto
+            &-item
+                margin-top: 30px
+                .content_txt
+                    padding: 0
+                    text-align: center
+                .post_photo
+                    display: block
+                    margin: auto
+    .partners 
+        background-size: cover
+    .contact_us
+        .contact_us_inner
+            flex-wrap: wrap
+            &-item
+                flex-basis: 380px
+@media (max-width: 900px)
+    .footer
+        .footer_inside
+            &-leftpart
+                flex-basis: 55%
+    =header()
+        padding-top: 30px
+    .hero
+        background-position: top
+        background-size: cover    
+    .ideas
+        .ideas_inner
+            .photos_idea
+                height: auto
+                &-item_left
+                    display: none
+                &-item_right
+                    display: none
+                &-item_center
+                    position: relative
+                    img 
+                        display: block
+                        margin: 0 auto
+                        width: 90%
+                        height: 90%
+    .partners 
+        .partners_inner
+            padding: 0 30px
+            .logo_container
+                flex-wrap: wrap
+                &-item
+                    padding-top: 15px
+                    display: block
+                    margin: auto
+    .contact_us
+        .contact_us_inner
+            flex-wrap: wrap
+            justify-content: center
+            &-item
+                text-align: center
+                flex-basis: 100%
+@media (max-width: 768px)
+    .footer
+        .footer_inside
+            flex-wrap: wrap
+            justify-content: center
+            text-align: center
+            &-leftpart
+                display: block
+            &-rightpart 
+                p
+                    padding: 0 10px
+    .watch_video
+        height: 350px
+    .projects
+        .projects_grid
+            grid-template-columns: 1fr 
+            &-item
+                margin-top: 30px
+                border: 1px solid #c7b299
+                border-radius: 10px
+        
+    .mobile_devices
+        .mobile_devices_inner
+            padding: 30px 15px 0 15px
+            text-align: center
+            &-leftpart
+                display: none
+            &-rightpart 
+                flex-basis: 100%
+                .mobile_devices_headers
+                    h1
+                        padding-top: 0
+                .mobile_devices_preferences
+                    display: inline-block
+                    margin: auto
+                    &-item
+                        padding-left: 0
+    .about_us
+        flex-wrap: wrap
+        &-item
+            padding: 0 20px
+            flex-basis: 200px
+            display: block
+            margin: auto
+    .hero
+        .hero_inner
+            .navbar
+                &-menu
+                    display: none
+                    flex-basis: 100%
+                &-toolbar
+                    display: none
+                    
+                &-menu_btn
+                    display: block
+    .ideas
+        .ideas_bot
+            .ideas_bot_inner
+                display: block
+                .leftpart
+                    margin-bottom: 50px
+                    text-align: center
+                .rightpart
+                    .idea_button
+                        display: flex
+                        justify-content: center
+@media (max-width: 600px)
+    .statistic
+        .statistic_inner
+            flex-wrap: wrap
+            justify-content: center
+            &-item
+                padding: 30px
+                flex-basis: 120px
+                .stat_name
+                    &:after 
+                        display: none
+    .projects
+        .project_buttons
+            flex-wrap: wrap 
+@media (max-width: 500px)
+    .hero
+        .hero_inner
+            .navbar
+                
+                &-menu
+                    ul
+                        justify-content: center
+                        flex-wrap: wrap
+                        li
+                            padding: 10px
+                            
+        .content
+            .hero_headers
+                h1
+                    margin: 0
+                h2 
+                    margin: 0
+

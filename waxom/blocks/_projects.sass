@@ -1,0 +1,46 @@
+.projects
+    &-headers
+        text-align: center
+        h1
+            +header()
+        p
+            margin: 0 auto
+            max-width: 750px
+            +second_txt()
+    .project_buttons
+        display: flex
+        justify-content: center
+        margin-top: 30px
+        &-item
+            margin-right: 15px
+            p
+                cursor: pointer
+                padding: 7px 20px
+                border: 1px solid #ebebeb
+                border-radius: 3px
+                color: #8c8c8c
+            p:hover
+                transition: 0.4s
+                background: #998675
+                color: #fff
+    .projects_grid
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        justify-items: center
+        grid-row-gap: 10px 
+        &-item
+            background-color: #fbfaf8
+            .item_txt
+                padding-left: 30px
+                .name
+                    color: #c7b299
+                    font-size: 20px
+                    font-weight: 500
+                .position
+                    color: #d1d1d1
+                    font-size: 14px
+                    font-weight: 300
+    .projects_button
+        margin-top: 20px
+        display: flex
+        justify-content: center

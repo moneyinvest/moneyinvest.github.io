@@ -1,0 +1,71 @@
+=flexible()
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+.hero
+    height: 100vh
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('..//img/main_bg.png')
+    background-position: top
+    background-size: 150% 
+    background-repeat: no-repeat
+    position: relative
+    .hero_inner
+        position: relative
+        height: 84%
+        padding: 0 15px
+        .navbar
+            padding: 20px 0
+            margin: 0 5px
+            +flexible()
+            &-logo
+                padding-right: 200px
+            &-menu
+                padding: 0 10px
+                flex-basis: 75%
+                ul
+                    padding: 0
+                    +flexible()
+                    li 
+                        a:hover
+                            transition: 0.4s
+                            color: #c7b299
+
+            &-toolbar
+                flex-basis: 120px
+                padding-left: 10px
+                img
+                    padding-left: 20px
+            &-menu_btn
+                display: none
+                cursor: pointer
+                img
+                    width: 50px 
+                    height: 50px
+        .content
+            width: 100%
+            height: 100%
+            +flexible()
+            justify-content: center
+            .hero_headers
+                text-align: center
+                color: #ffffff
+                h2
+                    font-size: 36px
+                    font-weight: 500
+                h1
+                    font-size: 58px
+                    font-weight: 700
+                p
+                    max-width: 572px
+                    font-size: 16px
+                    font-weight: 300
+                .hero_button
+                    margin-top: 50px
+                    
+
+
+
+
+                
+                

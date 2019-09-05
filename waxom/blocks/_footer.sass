@@ -1,0 +1,21 @@
+.footer
+    background-color: #111111
+    .footer_inside
+        padding: 20px 15px
+        color: #555555
+        +flexible()
+        &-leftpart
+            flex-basis: 35%
+            +flexible()
+            p
+                span
+                    color: #959595
+            a
+                color: #555555
+                &:hover
+                    transition: 0.4s
+                    color: #c7b299
+        &-rightpart
+            +flexible()
+            p
+                padding: 10px

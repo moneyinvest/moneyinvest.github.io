@@ -1,0 +1,25 @@
+.mobile_devices
+    background-color: #fbfaf8
+    .mobile_devices_inner
+        padding: 80px 15px 0 15px
+        
+        +flexible()
+        &-rightpart 
+            flex-basis: 60%
+            .mobile_devices_headers
+                h1
+                    +header()
+                p 
+                    +second_txt()
+            .mobile_devices_preferences
+                color: #8c8c8c
+                align-content: center
+                &-item
+                    display: flex
+                    justify-content: flex-start
+                    align-items: center
+                    color: #8c8c8c
+                    padding-left: 40px
+                    p
+                        padding-left: 20px
+                    
