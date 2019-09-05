@@ -1,0 +1,44 @@
+.contact_us
+    margin-top: 50px
+    padding-bottom: 40px
+    &:after
+        content: ''
+        display: block
+        transform: translateY(40px)
+        width: 1140px
+        margin: 0 auto
+        height: 1px
+        opacity: 0.5
+        background: black
+    .contact_us_inner
+        +flexible()
+        justify-content: space-between
+        
+        &-leftpart
+            flex-basis: 30%
+            .contact_us_underlogo_txt
+                color: #7c7c7c
+                font-size: 14px
+                font-weight: 500
+                line-height: 28px
+        &-rightpart
+            flex-basis: 65%
+            +flexible()
+            justify-content: space-between
+            .links_item
+                &-header
+                    color: #494949
+                    font-size: 20px
+                    font-weight: 700
+                    padding-bottom: 20px
+                p
+                    margin: 0
+                    a
+                        color: #7c7c7c
+                        font-family: Raleway
+                        font-size: 14px
+                        font-weight: 500
+                        line-height: 28px
+                        transition: 0.3s
+                        &:hover
+                            color: black

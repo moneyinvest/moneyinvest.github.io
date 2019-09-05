@@ -1,0 +1,98 @@
+=flexible
+    display: flex
+    align-items: center
+    justify-content: center
+.hero
+    background-image: url('..//img//BG.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    height: 100vh
+    position: relative
+    &_headphones
+        position: absolute
+        left: 50%
+        transform: translate(-193%, -50px)
+    &_earphones
+        position: absolute
+        right: 0
+        top: 50%
+    .top-nav
+        padding: 45px 0
+        &:after
+            background: #fff
+            content: ''
+            width: 100%
+            height: 1px
+            opacity: 0.7
+            display: block
+            transform: translateY(30px)
+        &_menu
+            list-style: none
+            display: flex
+            padding: 0
+            li
+                margin-left: 45px
+                a
+                    text-decoration: none
+                    color: #fff
+                    text-transform: uppercase
+                    transition: 0.3s
+                    &:hover
+                        color: #75eafb
+                .login_wrap
+                    padding: 20px 30px
+                    background-color: #479ee1
+                    border-radius: 10px
+    &-maincontent  
+        max-width: 510px
+        margin: 0 auto
+        transform: translateY(20vh) translateX(-320px)
+        position: relative
+       
+        &_header
+            color: #fffefe
+            font-size: 20px
+            font-weight: 400
+            text-transform: uppercase
+        &_secondheader
+            color: #fefefe
+            font-family: Raleway
+            font-size: 18px
+            font-weight: 500
+        &_buttons
+            +flexible()
+            justify-content: flex-start
+            a
+                box-shadow: 0 8px 11px rgba(54, 54, 54, 0.15)
+                border-radius: 10px
+                background-color: #ffffff 
+                padding: 8px 20px
+                transition: 0.3s
+                .google_play_button
+                    .google_play_button_wrap
+                        +flexible()
+                        p
+                            font-size: 20px
+                            padding-left: 10px
+                            color: #000
+                
+                &:hover
+                    background: #2178e2
+            .learn_more_button
+                a
+                    background-color: #4894ce
+                    margin-left: 20px
+                    font-size: 20px
+                    color: #fff
+                    padding: 30px 55px
+                    transition: 0.3s
+                    &:hover
+                        background: #fff
+                        color: #000
+
+
+                    
+            
+
+            

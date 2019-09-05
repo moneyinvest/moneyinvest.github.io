@@ -1,0 +1,83 @@
+.plans
+    background: #f4fbfc
+    background-image: url('..//img//plan_bg.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    padding-bottom: 100px
+    .plans_inner
+        &-content
+            margin-top: 70px
+            +flexible()
+            justify-content: space-between
+            .plan_item
+                width: 320px
+                border-radius: 20px
+                border: 1px solid rgba(0, 0, 0, 0.04)
+                background-color: #ffffff
+                text-align: center
+                padding-bottom: 30px
+                transition: 0.3s
+                cursor: pointer
+                &:hover
+                    width: 320px
+                    box-shadow: 0 0 51px rgba(92, 149, 161, 0.33)
+                    border-radius: 20px
+                    border: 1px solid rgba(0, 0, 0, 0.04)
+                &-image
+                    background-image: url('..//img//pattern_book.png')
+                    background-repeat: no-repeat
+                    background-size: cover
+                    background-position: center
+                    padding: 50px 0
+                &-name
+                    p
+                        color: #494949
+                        font-family: Raleway
+                        font-size: 16px
+                        font-weight: 700
+                &-price
+                    p
+                        color: #2eb0ec
+                        font-family: Raleway
+                        font-size: 20px
+                        font-weight: 500
+                        span
+                            color: #2eb0ec
+                            font-family: "Raleway - Extra Bold"
+                            font-size: 72px
+                            font-weight: 400
+                            &:before
+                                content: '$'
+                                color: #2eb0ec
+                                font-family: Raleway
+                                font-size: 20px
+                                font-weight: 500
+                                display: inline
+                                
+
+
+                &-advantages
+                    p
+                        font-family: Raleway
+                        font-size: 14px
+                        font-weight: 500
+                        line-height: 32px
+                    .responsive1, .customization1, .customization2,
+                        color: #bebebe
+                &-button
+                    a
+                        padding: 15px 30px
+                        font-family: Raleway
+                        font-size: 14px
+                        font-weight: 700
+                        text-transform: uppercase
+                        // Text style for "S, ign up"
+                        letter-spacing: 1.4px
+                        border-radius: 25px
+                        background-color: #66d4f4
+                        transition: 0.3s
+                        &:hover
+                            background: #324d5b 
+
+    
