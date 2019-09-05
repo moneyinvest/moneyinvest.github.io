@@ -1,0 +1,40 @@
+.clients
+    &-header
+        position: relative
+        h1
+            margin: 0
+            padding: 50px 0
+            font-size: 40px
+            font-weight: 700
+            text-transform: uppercase
+            text-align: center
+            color: black
+            opacity: 0.8
+        h1:before
+            content: ""
+            position: absolute
+            width: 5%   
+            height: 3px
+            left: 32%
+            top: 57% 
+            background: black
+            opacity: 0.8
+        h1:after
+            content: ""
+            position: absolute
+            width: 5%   
+            height: 3px
+            right: 32%
+            top: 57% 
+            background: black
+            opacity: 0.8
+    &-grid
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr 1fr
+        justify-content: space-between
+        align-items: center
+        justify-items: center  
+        
+        .grid_item
+            padding: 50px 0
+            

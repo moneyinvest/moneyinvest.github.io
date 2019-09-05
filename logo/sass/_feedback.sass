@@ -1,0 +1,64 @@
+.feedback
+    background-color: #373737
+    &-header
+        position: relative
+        h1
+            margin: 0
+            padding: 50px 0
+            font-size: 40px
+            font-weight: 400
+            line-height: 26px
+            text-transform: uppercase
+            text-align: center
+            color: #f7f7f7
+        h1:before
+            content: ""
+            position: absolute
+            width: 5%   
+            height: 2px
+            left: 32%
+            top: 57% 
+            background: #fff
+        h1:after
+            content: ""
+            position: absolute
+            width: 5%   
+            height: 2px
+            right: 32%
+            top: 57% 
+            background: #fff
+    &-content 
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 0 15px
+        .reviews
+            padding: 0 20px
+            .reviews_item
+                p 
+                    color: #cdc8c8
+                    font-size: 18px
+                    font-weight: 400
+                    text-align: center
+        .member_team_container
+            display: flex
+            justify-content: space-between
+            
+            .member_team
+                margin-left: 10px
+                position: relative
+                .member_desc
+                    margin: 0
+                    padding: 0
+                    display: flex
+                    position: absolute
+                    left: 10px 
+                    bottom: 0
+                    .number
+                        padding: 10px 15px
+                        background: #fff
+                    .name_position
+                        margin-left: 10px
+                        p 
+                            padding: 3px 30px 3px 10px
+                            background: #fff 

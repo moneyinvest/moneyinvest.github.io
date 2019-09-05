@@ -1,0 +1,124 @@
+@media (max-width: 1100px)
+    footer
+        .wrapper
+            padding: 0 15px
+    .callback
+        .wrapper
+            padding: 0 15px
+    .services
+        &-header
+            h1:before
+                left: 28%  
+            h1:after
+                right: 28%
+    .about_us
+        &-rightpart
+            h1,p,.about_us_button
+                padding: 0 40px
+@media (max-width: 900px)
+    .clients
+        &-grid
+            grid-template-columns: 1fr 1fr
+    .callback
+        .wrapper
+            .rightpart
+                .getcall
+                    margin-top: 20px
+                    display: block
+                    margin: 0 auto
+    .feedback
+        &-content
+            flex-direction: column
+    h1:after,h1:before
+        display: none
+            
+@media (max-width: 750px)
+    .about_us
+        display: flex
+        &-leftpart
+            flex-basis: 0%
+        &-rightpart
+            background-image: url('..//img//about_us.png')
+            background-repeat: no-repeat
+            background-size: cover
+            flex-basis: 100%
+            text-align: center
+            h1:after
+                display: none
+            h1,p,.about_us_button
+                color: #fff
+                padding: 0 20px
+    .callback
+        .wrapper
+            .rightpart
+                .inputdata
+                    display: block
+    .services
+        &-header
+            h1:before
+                display: none 
+            h1:after
+                display: none 
+    .hero
+        .navbar_outside
+            .navbar
+                &-social
+                    display: none
+                &-menu 
+                    flex-basis: 90%
+                &-logo
+                    flex-basis: 10%  
+    footer
+        .wrapper
+            padding: 30px 0
+            flex-direction: column-reverse
+    .feedback
+        &-content
+            .member_team_container
+                flex-direction: column
+                .member_team
+                    margin-bottom: 10px
+@media (max-width: 600px)
+    .hero
+        .navbar_outside
+            .navbar
+                padding: 30px 10px
+                &-menu 
+                    flex-basis: 100%
+                    display: none
+                &-logo
+                    flex-basis: 10% 
+                &-menu_btn
+                    display: block
+@media (max-width: 450px)
+    .hero
+        .navbar_outside
+            .navbar
+                &-menu 
+                    ul
+                        align-items: center
+                        flex-direction: column
+        .slider
+            .hero_content
+                margin-top: 0
+    .clients
+        &-grid
+            grid-template-columns: 1fr 
+    .callback
+        .wrapper 
+            flex-direction: column
+            text-align: center
+            .rightpart
+                padding-bottom: 10px  
+    footer
+        .wrapper
+            .footer_rightpart
+                .input_email
+                    display: block
+                    margin: 0 auto
+                    margin-bottom: 10px
+                .submit_subscribe
+                    
+                    display: block
+                    margin: 0 auto  
+    
