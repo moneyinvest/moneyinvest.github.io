@@ -1,0 +1,64 @@
+=flexible()
+    display: flex
+    justify-content: space-between
+    align-items: center
+.hero
+    .hero_inner
+        .hero_inner_content
+            +flexible()
+            .content_left
+                color: #ffffff
+                h1
+                    font-size: 55px
+                    font-weight: bold
+                    text-transform: uppercase
+                p
+                    font-size: 18px
+                    font-weight: 400
+                    line-height: 35px
+                &-buttons
+                    margin-top: 30px
+                    +flexible()
+                    justify-content: flex-start
+                    .free_button
+                        padding-left: 20px
+                        a
+                            background: #fff
+                            color: #061e37
+                            font-size: 15px
+                            font-weight: 700
+                            text-transform: uppercase
+                            padding: 22px 28px
+                    .buy_button:hover
+                        a
+                            transition: .3s
+                            color: #061e37
+                            background: #fff
+                    .free_button:hover 
+                        a
+                            transition: .3s
+                            color: #fff
+                            background: #061e37
+            .content_right
+                position: relative
+                video
+                    z-index: 1
+                .play_button
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%,-50%)
+                    z-index: 2
+                    .play_text
+                        padding: 0
+                        margin: -10px 0 0 -14px
+                        color: #061e37
+                        font-size: 12px
+                        font-weight: 700
+                        text-transform: uppercase
+                    img 
+                        cursor: pointer
+            
+                
+                        
+

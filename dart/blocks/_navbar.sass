@@ -1,0 +1,63 @@
+=flexible()
+    display: flex
+    justify-content: space-between
+    align-items: center
+.hero 
+    background-image: url('..//img//main_bg.png')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    height: 750px
+    .hero_inner
+        nav 
+            padding: 30px 15px
+            +flexible()
+            .logo
+                flex-basis: 20%
+                a
+                    +flexible()
+                    justify-content: center
+                    .logo_header
+                        padding-left: 15px
+                        font-family: "Raleway - Extra Bold"
+                        font-size: 15px
+                        font-weight: 700
+                        text-transform: uppercase
+                        span
+                            font-weight: 400
+            .menu
+                flex-basis: 40%
+                ul
+                    +flexible()
+                    padding: 0 
+                    margin: 0
+                    li
+                        list-style: none
+                        a
+                            color: #fff
+                            font-family: "Raleway - Semi Bold"
+                            font-size: 15px
+                            font-weight: 400
+                            &:hover
+                                transition: 0.3s
+                                color: #000000
+
+            .nav_button 
+                flex-basis: 15%
+                a
+                    color: #fff
+                    padding: 8px 12px
+                    border: 1px solid #fff
+                    
+                    &:hover
+                        transition: .3s
+                        color: #000
+            .nav_menu_button
+                display: none
+                img
+                    width: 50px
+                    height: 50px
+                    cursor: pointer
+                        
+                        
+

@@ -1,0 +1,36 @@
+.statistic
+    margin-top: 100px
+    +flexible()
+    .statistic_item
+        +flexible()
+        justify-content: center
+        flex-basis: 25%
+        flex-direction: row-reverse
+        padding: 10px 0
+        .stat_info
+            padding-left: 20px
+            color: #ffffff
+            font-family: "Raleway - Extra Bold"
+            font-size: 20px
+            font-weight: 400
+            line-height: 25px
+        .stat_img
+            border-radius: 100%
+            width: 50px
+            height: 50px
+            background: #fff
+            position: relative
+            img 
+                display: block
+                position: absolute
+                left: 50%
+                top: 50%
+                transform: translate(-50%,-50%)
+    &-statistic_item1
+        background-color: #80d8ff
+    &-statistic_item2
+        background-color: #82b1ff
+    &-statistic_item3
+        background-color: #b388ff
+    &-statistic_item4
+        background-color: #ea80fc

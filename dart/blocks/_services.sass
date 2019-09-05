@@ -1,0 +1,41 @@
+.services
+    .services_inner
+        &-usabletable
+            .usabletable_item
+                cursor: pointer
+                margin: 8px auto
+                max-width: 800px
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.13)
+                border-radius: 5px
+            .usabletable_item1,.usabletable_item2,.usabletable_item3,.usabletable_item4,.usabletable_item5
+                &-hidden_content
+                    display: none
+                    .hidden_content_inner
+                        +flexible()
+                        justify-content: space-around
+                        .hidden_content_right
+                            color: #061e37
+                            font-family: Raleway
+                            font-size: 15px
+                            font-weight: 400
+                            flex-basis: 60%
+                            
+                .table_controls
+                    +flexible()
+                    &-left
+                        display: flex
+                        
+                        align-items: center
+                        .control_img
+                            padding: 0 20px
+                        .table_stringname
+                            color: #061e37
+                            font-family: Raleway
+                            font-size: 15px
+                            font-weight: 700
+                            text-transform: uppercase
+                    &-right
+                        img 
+                            padding-right: 5px
+                            
+                        
