@@ -47,15 +47,16 @@
 }
 
 .hero .navbar_outer .navbar-menu ul li {
+  text-align: center;
   font-size: 20px;
   font-weight: 400;
 }
 
-.hero .navbar_outer .navbar-menu ul li a {
+.hero .navbar_outer .navbar-menu ul li .menu_link {
   position: relative;
 }
 
-.hero .navbar_outer .navbar-menu ul li a::after {
+.hero .navbar_outer .navbar-menu ul li .menu_link::after {
   position: absolute;
   content: "";
   display: block;
@@ -66,10 +67,27 @@
   opacity: 0;
 }
 
-.hero .navbar_outer .navbar-menu ul li a:hover::after {
+.hero .navbar_outer .navbar-menu ul li .menu_link:hover::after {
   -webkit-transition: .4s;
   transition: .4s;
   opacity: 1;
+}
+
+.hero .navbar_outer .navbar-menu ul li .menu_link2 {
+  position: relative;
+}
+
+.hero .navbar_outer .navbar-menu ul li .menu_link2::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 0px;
+}
+
+.hero .navbar_outer .navbar-menu ul li .menu_link2:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  color: #11749E;
 }
 
 .hero .navbar_outer .navbar-social {
@@ -867,6 +885,22 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .contact_us .contact_us_inner-contact_form form .input_field {
+    display: block;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 10px 100px 10px 10px;
+  }
+  .contact_us .contact_us_inner-contact_form form textarea {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-left: 2px;
+    padding-right: 50px;
   }
 }
 
