@@ -38,7 +38,7 @@
     .services
         .services_inner
             &-usabletable
-                max-width: 450px
+                max-width: 90%
                 margin: 0 auto
                 .usabletable_item1, .usabletable_item2, .usabletable_item3, .usabletable_item4, .usabletable_item5
                     &-hidden_content
@@ -61,6 +61,21 @@
                 .inputblock
                     flex-direction: column
                     width: 90%
+    .statistic
+        .statistic_item
+            flex-basis: 150px
+            flex-direction: column-reverse
+            .stat_info
+                font-size: 15px
+    .footer
+        .footer_inner 
+            .logo_references
+                &-logo
+                    flex-basis: 45%
+                &-references
+                    flex-basis: 45%
+                     
+                                
 @media (max-width: 600px)
     .hero
         .hero_inner
@@ -78,4 +93,70 @@
                     display: none
                 .nav_menu_button
                     display: block
-    
+    .about_us
+        .about_us_inner
+            &-content
+                justify-content: ce
+                .content_item
+                    flex-basis: 150px
+@media (max-width: 550px)
+    .footer
+        .footer_inner 
+            .logo_references
+                flex-direction: column
+                
+            .social_references 
+                flex-direction: column
+                &-references
+                    margin-bottom: 10px
+                   
+                
+                    ul 
+                        padding: 0 
+                        margin: 0
+                        +flexible()
+                        li 
+
+                            margin-left: 10px
+                            list-style: none
+                            a
+                                font-size: 12px
+                                opacity: 0.5
+                                color: #ffffff
+                                
+                        li:before
+                            content: "\2022"
+                            color: #fff
+                            display: inline-block   
+                            margin-right: 5px
+@media (max-width: 450px)
+    .contact_us
+        .contact_us_inner
+            &-contact_form
+                width: 300px
+                .inputblock
+                    flex-direction: column
+                    width: 90%
+    .hero
+        .hero_inner
+            .hero_inner_content
+                +flexible()
+                .content_left
+                    color: #ffffff
+                    h1
+                        font-size: 55px
+                        font-weight: bold
+                        text-transform: uppercase
+                    p
+                        font-size: 18px
+                        font-weight: 400
+                        line-height: 35px
+                    &-buttons
+                        +flexible()
+                        flex-direction: column
+                        .free_button
+                            padding-left: 0
+                            margin-top: 50px
+                        .buy_button
+                            padding-left: 0
+                            
