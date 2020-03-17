@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Title</title>
+</head>
+<body>
+    <div class="block">
+        <div class="header">
+            <h1 class="header-text">
+                Container 175/40 nc
+            </h1>
+        </div>
+        <div class="content">
+            <div class="flexible flex-wrap">
+                <div class="content-info col-xl-4 col-sm-12">
+                    <div class="show-title">
+                        <p class="usual-text ">Change size for container</p>
+                    </div>
+                    <div class="props pt-4 pb-1 flexible">
+                    <span class="title ml-4">
+                        2D visual
+                    </span>
+                        <div class="icon_change_size icon mr-4" data-toggle="modal" data-target="#sizeModal">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 0V24H24V0C20.3555 0 2.72479 0 0 0ZM7.94073 1.40625H16.0593V6.1875H7.94073V1.40625ZM16.0593 22.5938H7.94073V17.8125H16.0593V22.5938ZM21.6094 6.29608H20.2031V4.79114L4.79132 20.2031H6.29608V21.6094H2.39062V17.7039H3.79688V19.2089L19.2087 3.79688H17.7039V2.39062H21.6094V6.29608Z" fill="#3E3E3E"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="photo">
+                        <img src="images/container.png" class="photo-img" alt="container">
+                    </div>
+                    <div class="details">
+                        <p class="detail_click text-center pb-2">Show 3D</p>
+                    </div>
+                </div>
+                <div class="shipping-details col-xl-7 col-sm-12">
+                    <div class="details-edit ">
+                        <p class="usual-text col-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi adipiscing ipsum adipiscing tortor aliquam.</p>
+                        <div class="icon col-1"><img src="images/marker.png" alt="marker"></div>
+                    </div>
+                    <div class="shipping-info  mt-2 d-flex">
+                        <div class="ship col-6">
+                            <p class="usual-text"><span class="bold">Shipping type:</span> Port to Port (P2P)</p>
+                            <p class="usual-text"><span class="bold">Shipping line:</span> Port to Port (P2P)</p>
+                            <p class="usual-text"><span class="bold">Location:</span> Port to Port (P2P)</p>
+                            <p class="usual-text"><span class="bold">Status:</span><span class="blue-color"> Loading</span> </p>
+                        </div>
+                        <div class="port col-6">
+                            <p class="usual-text"><span class="bold">Origin port:</span> info</p>
+                            <p class="usual-text"><span class="bold">Destination port:</span> info</p>
+                            <p class="usual-text"><span class="bold">Departure date:</span> info</p>
+                            <p class="usual-text"><span class="bold">Arrival date:</span> info</p>
+                        </div>
+                    </div>
+                    <div class="shipping-buttons mt-4 d-flex">
+                        <div class="col-6">
+                            <p class="detail_click" data-toggle="modal" data-target="#profitModal">Show profit</p>
+                            <p class="detail_click">Show exspenses</p>
+                        </div>
+                        <div class="col-6">
+                            <p class="detail_click">Show bill</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cargo-packing bg_grey">
+                <p class="title col">Cargo packing</p>
+                <div class="cargo-info mt-3 d-flex flex-wrap col-lg-10">
+                    <p class="usual-text item"><span class="bold">Total:</span> 77 packages</p>
+                    <p class="usual-text item"><span class="bold">Delivered:</span> 44 packages</p>
+                    <p class="usual-text item"><span class="bold">Clients:</span> 4</p>
+                    <p class="usual-text item"><span class="bold">Cargo volume:</span> 77 m<sup>2</sup></p>
+                    <p class="usual-text item"><span class="bold">Cargo weight:</span> 4270 kg </p>
+                </div>
+                <div class="colors-block mt-2 flexible flex-wrap">
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="color-item">
+                            <div class="blue-block color-block mr-4">
+                            </div>
+                            <div class="info-row">
+                                <span class="usual-text"><span class="bold">Cargo 1( <span class="green-color">On hand</span> ):</span> 17 packages - Client <span class="detail_click">John Johnin</span></span>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <div class="yellow-block color-block mr-4">
+                            </div>
+                            <div class="info-row">
+                                <span class="usual-text"><span class="bold">Cargo 2( <span class="blue-color">On hand</span> ):</span> 10 packages - Client <span class="detail_click">ALex Johnin</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-sm-12">
+                        <div class="color-item">
+                            <div class="red-block color-block mr-4">
+                            </div>
+                            <div class="info-row">
+                                <span class="usual-text"><span class="bold">Cargo 3( <span class="green-color">On hand</span> ):</span> 17 packages - Client <span class="detail_click">John Johnin</span></span>
+                            </div>
+                        </div>
+                        <div class="color-item">
+                            <div class="green-block color-block mr-4">
+                            </div>
+                            <div class="info-row">
+                                <span class="usual-text"><span class="bold">Cargo 4( <span class="blue-color">On hand</span> ):</span> 17 packages - Client <span class="detail_click">John Johnin</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="packing-details mt-4 col">
+                    <p class="detail_click">Show packing by blocks</p>
+                    <p class="detail_click">Show packing step by step</p>
+                </div>
+            </div>
+            <div class="changing-packing bg_grey">
+                <p class="title col">My packing</p>
+                <div class="flexible">
+                    <div class="cargo-info mt-3 d-flex flex-wrap col-lg-7">
+                        <p class="usual-text item"><span class="bold">Total:</span> 77 packages</p>
+                        <p class="usual-text item"><span class="bold">Cargo volume:</span> 77 m<sup>2</sup></p>
+                        <p class="usual-text item"><span class="bold">Cargo weight:</span> 4270 kg </p>
+                    </div>
+                    <div class="packing-details d-flex mt-4 col-lg-4">
+                        <p class="detail_click pr-5">Show packing by blocks</p>
+                        <p class="detail_click">Show packing step by step</p>
+                    </div>
+                </div>
+                <div class="flexible">
+                    <div class="color-item d-flex align-items-center col-lg-7 ">
+                        <div class="green-block color-block mr-4">
+                        </div>
+                        <div class="info-row">
+                            <span class="usual-text"><span class="bold">Cargo 4( <span class="blue-color">On hand</span> ):</span> 17 packages - Client <span class="detail_click">John Johnin</span></span>
+                        </div>
+                    </div>
+                    <div class="files-buttons d-flex align-items-center col-lg-4">
+                        <div class="item mr-5">
+                            <img src="images/up.png" alt="up">
+                            <span class="detail_click">Upload “My Packing.xsl”</span>
+                        </div>
+                        <div class="item">
+                            <img src="images/down.png" alt="down">
+                            <span class="detail_click">Download the file</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- Modal Size -->
+    <div class="modal fade " id="sizeModal" tabindex="-1" role="dialog" aria-labelledby="sizeModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content modal_size modal_position">
+                <button type="button" class="close modal_close" data-dismiss="modal" aria-label="Close">
+                    <div aria-hidden="true"><img src="images/close.png" alt=""></div>
+                </button>
+                <div class="modal-body modal_size mt-4">
+                    <h1 class="header-text text-center">Change size for container</h1>
+                    <p class="usual-text text-center mt-5">In what size do you want to change?</p>
+                    <div class="d-flex justify-content-center mt-4">
+                        <div>
+                            <input type="checkbox"  class="input_button_component" id="size0" checked >
+                            <label class="label_button_component text-uppercace" for="size0">20 DV</label>
+                            <input type="checkbox"  class="input_button_component" id="size1" >
+                            <label class="label_button_component" for="size1">40 DV</label>
+                            <input type="checkbox"  class="input_button_component" id="size2" >
+                            <label class="label_button_component" for="size2">40 RF</label>
+                        </div>
+                    </div>
+                    <button type="button" class="btn btn-primary confirm_button mt-5 mb-3">Change Size</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal Profit -->
+    <div class="modal fade " id="profitModal" tabindex="-1" role="dialog" aria-labelledby="sizeModal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content modal_size modal_position">
+                <button type="button" class="close modal_close" aria-hidden="true" data-dismiss="modal" aria-label="Close">
+                    <div><img src="images/close.png" alt=""></div>
+                </button>
+                <div class="modal-body modal_size mt-4">
+                    <h1 class="header-text text-center">Profit</h1>
+                    <div class="mt-3 mb-3">
+                        <h1 class="text-center"> grafic here</h1>
+                    </div>
+                    <p class="title bold ml-3 ">Total: $1000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function () {
+        	var list_length = document.querySelectorAll('.input_button_component').length;
+        	var check_mas = [];
+            for (var i=0; i<list_length; i++) {
+                check_mas[i] = '#size'+ i;
+            }
+            check_mas.forEach(function (item) {
+                $(item).click(function () {
+                    check_mas.forEach(function (elem) {
+                      $(elem).prop('checked', false);
+                    })
+                 $(item).prop('checked', true);
+                })
+            });
+
+        })
+    </script>
+</body>
+</html>
