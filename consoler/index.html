@@ -86,14 +86,14 @@
                             <div class="blue-block color-block mr-4">
                             </div>
                             <div class="info-row">
-                                <span class="usual-text"><span class="bold">Cargo 1( <span class="green-color">On hand</span> ):</span> 17 packages - Client <span class="detail_click">John Johnin</span></span>
+                                <span class="usual-text"><span class="bold">Cargo 1( <span class="green-color">On hand</span> ):</span> 17 packages - Client <span class="detail_click show-trigger">John Johnin</span></span>
                             </div>
                         </div>
                         <div class="color-item">
                             <div class="yellow-block color-block mr-4">
                             </div>
                             <div class="info-row">
-                                <span class="usual-text"><span class="bold">Cargo 2( <span class="blue-color">On hand</span> ):</span> 10 packages - Client <span class="detail_click">ALex Johnin</span></span>
+                                <span class="usual-text"><span class="bold">Cargo 2( <span class="blue-color">On hand</span> ):</span> 10 packages - Client <span class="detail_click show-trigger">ALex Johnin</span></span>
                             </div>
                         </div>
                     </div>
@@ -102,14 +102,14 @@
                             <div class="red-block color-block mr-4">
                             </div>
                             <div class="info-row">
-                                <span class="usual-text"><span class="bold">Cargo 3( <span class="green-color">On hand</span> ):</span> 17 packages - Client <span class="detail_click">John Johnin</span></span>
+                                <span class="usual-text"><span class="bold">Cargo 3( <span class="green-color">On hand</span> ):</span> 17 packages - Client <span class="detail_click show-trigger">John Johnin</span></span>
                             </div>
                         </div>
                         <div class="color-item">
                             <div class="green-block color-block mr-4">
                             </div>
                             <div class="info-row">
-                                <span class="usual-text"><span class="bold">Cargo 4( <span class="blue-color">On hand</span> ):</span> 17 packages - Client <span class="detail_click">John Johnin</span></span>
+                                <span class="usual-text"><span class="bold">Cargo 4( <span class="blue-color">On hand</span> ):</span> 17 packages - Client <span class="detail_click show-trigger">John Johnin</span></span>
                             </div>
                         </div>
                     </div>
@@ -121,35 +121,70 @@
             </div>
             <div class="changing-packing bg_grey">
                 <p class="title col">My packing</p>
-                <div class="flexible">
-                    <div class="cargo-info mt-3 d-flex flex-wrap col-lg-7">
+                <div class="flexible flex-wrap">
+                    <div class="cargo-info mt-3 d-flex flex-wrap col-lg-7 col-sm-12 ">
                         <p class="usual-text item"><span class="bold">Total:</span> 77 packages</p>
                         <p class="usual-text item"><span class="bold">Cargo volume:</span> 77 m<sup>2</sup></p>
                         <p class="usual-text item"><span class="bold">Cargo weight:</span> 4270 kg </p>
                     </div>
-                    <div class="packing-details d-flex mt-4 col-lg-4">
+                    <div class="packing-details d-flex mt-4 col-lg-4 col-sm-12">
                         <p class="detail_click pr-5">Show packing by blocks</p>
                         <p class="detail_click">Show packing step by step</p>
                     </div>
                 </div>
-                <div class="flexible">
-                    <div class="color-item d-flex align-items-center col-lg-7 ">
+                <div class="flexible flex-wrap">
+                    <div class="color-item d-flex align-items-center col-xl-7 col-sm-12 mt-3">
                         <div class="green-block color-block mr-4">
                         </div>
                         <div class="info-row">
                             <span class="usual-text"><span class="bold">Cargo 4( <span class="blue-color">On hand</span> ):</span> 17 packages - Client <span class="detail_click">John Johnin</span></span>
                         </div>
                     </div>
-                    <div class="files-buttons d-flex align-items-center col-lg-4">
-                        <div class="item mr-5">
+                    <div class="files-buttons d-flex flex-wrap align-items-center col-xl-4 col-sm-12">
+                        <div class="item col-lg-6 col-sm-12  mt-3">
                             <img src="images/up.png" alt="up">
                             <span class="detail_click">Upload “My Packing.xsl”</span>
                         </div>
-                        <div class="item">
+                        <div class="item col-lg-6 col-sm-12 mt-3">
                             <img src="images/down.png" alt="down">
                             <span class="detail_click">Download the file</span>
                         </div>
                     </div>
+                </div>
+                <div class="col mt-4 pb-3">
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th scope="col">Cargo name</th>
+                            <th scope="col">Documents</th>
+                            <th scope="col">Picture</th>
+                            <th scope="col">Status</th>
+                            <th scope="col">Cargo volume</th>
+                            <th scope="col">Cargo weight</th>
+                            <th scope="col"></th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td data-label="Cargo name">Cargo name</td>
+                            <td data-label="Documents"><span class="detail_click">document.pdf</span></td>
+                            <td data-label="Picture"><span class="detail_click">photo.jpg</span></td>
+                            <td data-label="Status"><span class="green-color bold">On hand</span></td>
+                            <td data-label="Cargo volume">1 m<sup>2</sup></td>
+                            <td data-label="Cargo weight">50 kg</td>
+                            <td data-label=""><div class="icon"><img src="images/marker.png" alt=""></div></td>
+                        </tr>
+                        <tr>
+                            <td data-label="Cargo name">Cargo name</td>
+                            <td data-label="Documents"><span class="detail_click">document.pdf</span></td>
+                            <td data-label="Picture"><span class="detail_click">photo.jpg</span></td>
+                            <td data-label="Status"><span class="green-color bold">On hand</span></td>
+                            <td data-label="Cargo volume">1 m<sup>2</sup></td>
+                            <td data-label="Cargo weight">50 kg</td>
+                            <td data-label=""><div class="icon"><img src="images/marker.png" alt=""></div></td>
+                        </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -165,16 +200,16 @@
                 <div class="modal-body modal_size mt-4">
                     <h1 class="header-text text-center">Change size for container</h1>
                     <p class="usual-text text-center mt-5">In what size do you want to change?</p>
-                    <div class="d-flex justify-content-center mt-4">
-                        <div>
-                            <input type="checkbox"  class="input_button_component" id="size0" checked >
-                            <label class="label_button_component text-uppercace" for="size0">20 DV</label>
-                            <input type="checkbox"  class="input_button_component" id="size1" >
-                            <label class="label_button_component" for="size1">40 DV</label>
-                            <input type="checkbox"  class="input_button_component" id="size2" >
-                            <label class="label_button_component" for="size2">40 RF</label>
+                        <div class="checkbox-block d-flex justify-content-center">
+                            <div class="">
+                                <input type="checkbox"  class="input_button_component" id="size0" checked >
+                                <label class="label_button_component text-uppercace" for="size0">20 DV</label>
+                                <input type="checkbox"  class="input_button_component" id="size1" >
+                                <label class="label_button_component" for="size1">40 DV</label>
+                                <input type="checkbox"  class="input_button_component" id="size2" >
+                                <label class="label_button_component" for="size2">40 RF</label>
+                            </div>
                         </div>
-                    </div>
                     <button type="button" class="btn btn-primary confirm_button mt-5 mb-3">Change Size</button>
                 </div>
             </div>
@@ -199,6 +234,7 @@
     </div>
     <script>
         $(document).ready(function () {
+        	//modal size checkbox
         	var list_length = document.querySelectorAll('.input_button_component').length;
         	var check_mas = [];
             for (var i=0; i<list_length; i++) {
